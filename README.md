@@ -13,6 +13,10 @@ On suppose données n devises et une table n x n pour les taux de change.
 
 Déterminer si des séquences d'arbitrage existent. Lesquelles rapportent le plus et lesquelles ont le moins d'étapes.
 
+## Illustration du problème
+
+Voici un graphe avec 3 devises et les chemins possibles de faire.
+
 **Graphe :**
 
 - il faut un chemin qui passe max une fois par une devise
@@ -27,23 +31,25 @@ Déterminer si des séquences d'arbitrage existent. Lesquelles rapportent le plu
         ```mermaid
         graph TD;
             A[EUR]-->D[EUR];
-            A-->B[USD];
+            A-->B[MUR];
             A-->C[YEN];
             B-->Y[EUR];
             B-->Z[YEN];
             C-->X[EUR];
-            C-->W[USD];
+            C-->W[MUR];
             Z-->U[EUR];
             W-->V[EUR]
         ```
-        
+
+Avec les chemins possibles pour effectuer un arbitrage, il nous faut un tableau de devise, pour pouvoir calculer quel est le chemin qui est optimal.
+
 **tableau des devises :**
 
-| Devise |  EUR  |  USD  |  YEN  |
+| Devise |  EUR  |  MUR  |  YEN  |
 | :-----:|:-----:|:-----:|:-----:|
-|  EUR   |   1   |  0.92 | 164.28|
-|  USD   |  1.09 |   1   | 153.25|
-|  YEN   | 0.0061| 0.0052|   1   |
+|  EUR   |   1   | 49.78 | 164.28|
+|  MUR   |  0.02 |   1   |  3.31 |
+|  YEN   | 0.0061|  0.3  |   1   |
 
 
   
