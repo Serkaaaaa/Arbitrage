@@ -163,22 +163,3 @@ def convertir():
 if __name__ == "__main__":
     application()
 
-
-# Commandes pour lancer le programme :
-# python -m poetry run python -m dossier --help
-# python -m poetry run python -m dossier auteurs
-# python -m poetry run python -m dossier devisee
-# python -m poetry run python -m dossier devises_disponibles
-# python -m poetry run python -m dossier taux_de_change
-# python -m poetry run python -m dossier convertir
-
-# Commande pour lancer lancer puis installer les modules nécessaires :
-# python -m poetry shell
-# pip install poetry, rich, pyserde, typer
-
-# $env:PYTHONWARNINGS = "ignore" pour ignorer les warnings
-
-
-# Interface graphique hors poetry :
-# Exécuter le programme avec la commande suivante :
-# python -m dossier.interface_graphique

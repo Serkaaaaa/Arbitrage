@@ -23,19 +23,12 @@ class Application(tk.Tk):
         style = ttk.Style(self)
         style.configure("TFrame", background="#ffffff")
         style.configure(
-            "TButton",
-            background="#336699",
-            foreground="white",
-            font=("Arial", 12)
+            "TButton", background="#336699", foreground="white", font=("Arial", 12)
         )
         style.configure("TLabel", background="#ffffff", font=("Arial", 12))
         style.configure("Header.TLabel", font=("Arial", 14, "bold"))
-        
-        style.configure(
-            "OptimalPath.TButton",
-            foreground="black",
-            font=("Arial", 12)
-        )
+
+        style.configure("OptimalPath.TButton", foreground="black", font=("Arial", 12))
 
         frame = ttk.Frame(self)
         frame.place(relx=0.5, rely=0.5, anchor="center")
@@ -55,7 +48,7 @@ class Application(tk.Tk):
             frame,
             text="Afficher le chemin optimal",
             command=self.afficher_chemin_optimal,
-            style="OptimalPath.TButton"
+            style="OptimalPath.TButton",
         )
         self.btn_afficher.grid(
             row=2, column=0, columnspan=2, padx=10, pady=10, sticky="ew"
@@ -67,10 +60,12 @@ class Application(tk.Tk):
         )
 
         self.btn_devises = ttk.Button(
-            frame, text="Afficher les devises", command=self.afficher_devises, style="OptimalPath.TButton"
+            frame,
+            text="Afficher les devises",
+            command=self.afficher_devises,
+            style="OptimalPath.TButton",
         )
         self.btn_devises.grid(row=4, column=1, padx=10, pady=10, sticky="ew")
-
 
     def afficher_chemin_optimal(self):
         devise_initiale = self.combo_devise.get()
