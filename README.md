@@ -51,7 +51,15 @@ Avec les chemins possibles pour effectuer un arbitrage, il nous faut un tableau 
 |  MUR   |  0.02 |   1   |  3.31 |
 |  YEN   | 0.0061|  0.3  |   1   |
 
+**Les chemins :**
 
+EUR -> EUR : Pas de transaction, donc aucun arbitrage.\
+EUR -> MUR -> EUR : 1 EUR -> 49.78 MUR -> 1 / 49.78 EUR ≈ 0.02006 EUR (pas d'arbitrage).\
+EUR -> YEN -> EUR : 1 EUR -> 164.28 YEN -> 1 / 164.28 EUR ≈ 0.00608 EUR (pas d'arbitrage).\
+EUR -> MUR -> YEN -> EUR : 1 EUR -> 49.78 MUR -> 3.31 YEN -> 1 / 3.31 EUR ≈ 0.3022 EUR (arbitrage possible, gain de 0.3022 EUR).\
+EUR -> YEN -> MUR -> EUR : 1 EUR -> 164.28 YEN -> 0.3 MUR -> 1 / 0.3 EUR ≈ 3.33 EUR (arbitrage possible, gain de 3.33 EUR).
+
+Le meilleur chemin est : EUR -> YEN -> MUR -> EUR
   
 
 ## Comment faire marcher l'application via les lignes de commandes : 
@@ -196,7 +204,7 @@ Taux de change entre YEN et GBP : 0.0052
 
 Si ça n'a pas été fait précédement :
 
-1. Pour faire marcher l'application,il faut ouvrir le terminal et télécharger plusieurs package:
+1. Pour faire marcher l'application, il faut ouvrir le terminal et télécharger plusieurs package:
 
 ```
 pip install poetry
@@ -223,7 +231,7 @@ poetry install
 ``` 
 poetry run python -m dossier.interface_graphique
 ```
-Une fenetre s'ouvre :
+Une fenêtre s'ouvre :
 
 <img src="Images/interface_graphique_1.png" alt="Description de l'image" width="500">
 
@@ -235,7 +243,7 @@ Un petit pop up qui apparait:
 
 <img src="Images/interface_graphique_3.png" alt="Description de l'image" width="100">
 
-Appuyer sur OK, puis slectionnez la devise avec laquelle vous voulez faire de l'arbitrage:
+Appuyer sur OK, puis selectionnez la devise avec laquelle vous voulez faire de l'arbitrage:
 
 <img src="Images/interface_graphique_5.png" alt="Description de l'image" width="500">
 
