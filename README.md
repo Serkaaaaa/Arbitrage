@@ -52,14 +52,12 @@ Déterminer si des séquences d'arbitrage existent. Lesquelles rapportent le plu
 
 1. Pour faire marcher l'application,il faut ouvrir le terminal et télécharger plusieurs package:
 
-
-
 ```
 pip install poetry
 pip install pyserde
 pip install typer
 pip install rich 
-pip install kt
+pip install tk
 ```
 
 2. Utiliser poetry
@@ -187,4 +185,70 @@ Entrez la devise source : yen
 Entrez la devise cible : gbp
 Taux de change entre YEN et GBP : 0.0052
 ```
+
+## Comment faire marcher l'application via l'interface graphique :
+
+Si ça n'a pas été fait précédement :
+
+1. Pour faire marcher l'application,il faut ouvrir le terminal et télécharger plusieurs package:
+
+```
+pip install poetry
+pip install pyserde
+pip install typer
+pip install rich 
+pip install tk
+```
+
+2. Utiliser poetry
+
+Ouvrir un environnement virtuel :
+```
+poetry shell
+```
+
+Installer les packages nécéssaires au bon fonctionnement de l'application :
+```
+poetry install
+```
+
+Maintenant pour ouvrir l'interface graphique :
+
+``` 
+poetry run python -m dossier.interface_graphique
+```
+Une fenetre s'ouvre :
+![alt text](Images/interface_graphique_1.png)
+
+Afficher les devises disponibles : 
+
+![alt text](Images/interface_graphique_2.png)
+
+![alt text](Images/interface_graphique_3.png)
+
+Appuyer sur OK, puis slectionnez la devise avec laquelle vous voulez faire de l'arbitrage:
+
+![alt text](Images/interface_graphique_5.png)
+
+Et appuyer sur "Afficher le chemin optimal"!
+
+Sélectionner si vous voulez convertir : 
+
+![alt text](Images/interface_graphique_6.png)
+
+Si oui choisir le montant :
+
+![alt text](Images/interface_graphique_7.png)
+
+puis appoyez sur OK!
+
+Voila ! Vous avez votre arbitrage de fait !
+
+
+
+
+
+
+
+
 
