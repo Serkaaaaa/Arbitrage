@@ -212,37 +212,46 @@ Installer les packages nécéssaires au bon fonctionnement de l'application :
 poetry install
 ```
 
-Maintenant pour ouvrir l'interface graphique :
+3. Maintenant pour ouvrir l'interface graphique :
 
 ``` 
 poetry run python -m dossier.interface_graphique
 ```
 Une fenetre s'ouvre :
-![alt text](Images/interface_graphique_1.png)
+
+<img src="Images/interface_graphique_1.png" alt="Description de l'image" width="500">
 
 Afficher les devises disponibles : 
 
-![alt text](Images/interface_graphique_2.png)
+<img src="Images/interface_graphique_2.png" alt="Description de l'image" width="500">
 
-![alt text](Images/interface_graphique_3.png)
+Un petit pop up qui apparait:
+
+<img src="Images/interface_graphique_3.png" alt="Description de l'image" width="100">
 
 Appuyer sur OK, puis slectionnez la devise avec laquelle vous voulez faire de l'arbitrage:
 
-![alt text](Images/interface_graphique_5.png)
+<img src="Images/interface_graphique_5.png" alt="Description de l'image" width="500">
 
 Et appuyer sur "Afficher le chemin optimal"!
 
 Sélectionner si vous voulez convertir : 
 
-![alt text](Images/interface_graphique_6.png)
+<img src="Images/interface_graphique_6.png" alt="Description de l'image" width="500">
 
 Si oui choisir le montant :
 
-![alt text](Images/interface_graphique_7.png)
+<img src="Images/interface_graphique_9.png" alt="Description de l'image" width="500">
 
-puis appoyez sur OK!
+puis appuyez sur OK!
+
+Vous avez maintenant le montant convertit et le gain!
+
+<img src="Images/interface_graphique_8.png" alt="Description de l'image" width="500">
+
 
 Voila ! Vous avez votre arbitrage de fait !
+
 
 
 
